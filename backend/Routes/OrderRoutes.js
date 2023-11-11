@@ -122,8 +122,8 @@ router.post("/createorder", (req, res) => {
             const queries = list.map((result) => {
               i++;
               new_id = result.id + i;
-              return t.none(
-                "INSERT INTO order_table VALUES ($1, $2, $3, $4, $5, $6, CURRENT_DATE, LOCALTIME(0), $7)",
+              return t.one(
+                "INSERT INTO order_table VALUES ($1, $2, $3, $4, $5, $6, CURRENT_DATE, LOCALTIME(0), $7) RETURNING *",
                 [
                   new_id,
                   result.order_id + 1,
@@ -136,7 +136,12 @@ router.post("/createorder", (req, res) => {
               );
             });
             return t.batch(queries);
-          }).then(result => res.send(result)).catch(err => console.error(err))
+          })
+          .then(result => {
+            let o_id = result[0].order_id
+            res.send({msg: o_id})
+          })
+          .catch(err => console.error(err))
         })
       })
     })
