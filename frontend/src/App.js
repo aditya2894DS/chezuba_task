@@ -15,7 +15,6 @@ function App() {
             <Route path="/createorder" element={<CreateOrderComponent />} />
             <Route path="/getorder" element={<GetOrderComponent />} />
           </Route>
-          {/* <CreateOrderComponent /> */}
         </Routes>
       </BrowserRouter>
     </div>

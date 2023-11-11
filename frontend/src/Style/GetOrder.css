@@ -1,0 +1,26 @@
+.get-order-container{
+    flex-grow: 0.8;
+    padding-left: 2em;
+    padding-top: 2em;
+}
+
+.row{
+    display: flex;
+}
+
+#cust-name, #o-time, #o-date{
+    flex-grow: 0.2;
+}
+
+.prod-details-container{
+    display: flex;
+    margin-right: 1em;
+}
+
+.prod-details-container p:nth-child(1){
+    margin-right: 5px;
+}
+
+.order-txt{
+    margin-right: 10px;
+}
