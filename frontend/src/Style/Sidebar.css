@@ -1,0 +1,19 @@
+.sidebar-component{
+    flex-grow: 0.2;
+    background-color: yellow;
+}
+
+.sidebar-list{
+}
+
+.sidebar-list li{
+    list-style-type: none;
+    padding: 0.5em;
+    text-align: left;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.sidebar-list li a{
+    text-decoration: none;
+}

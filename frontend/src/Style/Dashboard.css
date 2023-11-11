@@ -1,0 +1,9 @@
+.dashboard-container{
+    flex-grow: 0.8;
+}
+
+.widget-container{
+    height: 10em;
+    display: flex;
+    flex-direction: column;
+}

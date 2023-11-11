@@ -1,0 +1,74 @@
+.create-order-container{
+    display: flex;
+    height: 20em;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 5em;
+    flex-grow: 0.8;
+}
+
+.customer-detail-form{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 0.5;
+    align-items: center;
+    flex-grow: 0.5;
+}
+.customer-detail-form label{
+    margin-bottom: 0.5em;
+
+}
+.customer-detail-form .input-field{
+    margin-bottom: 1em;
+}
+
+.right-col{
+    flex-grow: 0.5;
+}
+
+.product-adder-component{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.prod-name, .counter-container, .subtotal{
+    flex-grow: 0.33;
+    flex-shrink: 0;
+    flex-basis:0.33; 
+
+}
+
+.counter-container{
+    display: flex;
+    align-items: center;
+    width: 150px;
+    justify-content: center;
+}
+.counter-container input{
+    width: 3em;
+    height: 2em;
+    text-align: center;
+    margin: 0 5px;
+}
+
+.name-price-container{
+    display: flex;
+}
+
+.counter-container button{
+    height: 2em;
+    width: 2em;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.counter-container #dec-button{
+    background-image: url('../Icons/minus.svg');
+    background-size: cover;
+}
+
+.counter-container #inc-button{
+    background-image: url('../Icons/plus.svg');
+    background-size: cover;
+}
