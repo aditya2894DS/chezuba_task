@@ -34,7 +34,7 @@ export default function OrderByProductWidget() {
   return (
     <>
     <div className="widget-container">
-      <h5>OrderByProductWidget</h5>
+      <h5>OrderByProduct Widget</h5>
         <Bar data={chartData} />
         </div>
     </>

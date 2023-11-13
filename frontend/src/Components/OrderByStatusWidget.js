@@ -34,7 +34,7 @@ export default function OrderByStatusWidget() {
   return (
     <>
     <div className="widget-container">
-      <h5>OrderByStatusWidget</h5>
+      <h5>OrderByStatus Widget</h5>
         <Bar data={chartData} />
         </div>
     </>

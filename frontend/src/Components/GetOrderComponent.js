@@ -53,6 +53,7 @@ export default function GetOrderComponent() {
     <>
       <div className="get-order-container">
         <form className="get-order-form" onSubmit={sendOrderId}>
+            <label for="order-id">Order id:</label>
           <input
             type="text"
             id="order-id"
@@ -60,7 +61,7 @@ export default function GetOrderComponent() {
             onChange={(e) => setInputId(e.target.value)}
             value={inputId}
           />
-          <button type="submit">Get order</button>
+          <button type="submit">Get order details</button>
         </form>
         <div className="order-detail-container" style={{display: displayDetails?"block": "none"}}>
             <div className="row row-1">

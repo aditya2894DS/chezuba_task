@@ -34,7 +34,7 @@ export default function TopBranches() {
   return (
     <>
     <div className="widget-container">
-      <h5>TopBranchesWidget</h5>
+      <h5>Top Branches Widget</h5>
         <Bar data={chartData} />
         </div>
     </>
